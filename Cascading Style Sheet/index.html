@@ -1,0 +1,66 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cascading Style Sheet</title>
+	<style>
+		h2 {
+			color: green;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<!-- Best practice: External styling or external css -->
+
+</head>
+<body>
+	<!-- navbar -->
+	<nav>
+		<a href="#landing">Centro Escolar Universiy</a>
+		<a href="#landing">Home</a>
+		<a href="#register">Register</a>
+	</nav>
+	<!-- end of navbar for comment ctrl / -->
+<h1>Hello World</h1>
+<section id="landing"> 
+<h2> Welcome to Centro Escolar University</h2>
+<!-- ids are unique identifiers of an element -->
+<h3 id="ceu-motto">Cientia y Virtud</h3>
+
+<img src="/assets/images/doggo.jpg">
+
+<ol id="learning-list">
+	<li class="offering-item"> Intro to Computing </li>
+	<li class="offering-item"> Data Analytics</li>
+
+	<li class="offering-item"> Game Development </li>
+
+</ol>
+
+
+<a href="#top">Back to Top</a>
+	
+</section>
+
+<section id="register">
+	<h2>Register</h2>
+	<form>
+		<label for="">First Name:</label>
+		<input type="text" id="first-name" required autocomplete="" />
+
+		<label for=""> Last Name:</label>
+		<input type="text" id="last-name" required autocomplete="" />
+
+
+		<label for=""> Email:</label>
+		<input type="text" id="email" required autocomplete="" />
+
+		<button type="submit">Enroll Now!</button>
+		<a href="#top">Back to Top</a>
+
+
+
+	</form>
+	
+</section>
+</html>

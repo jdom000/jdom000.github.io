@@ -1,0 +1,126 @@
+/*
+CSS syntax:
+selector{
+	
+	property: value;
+}
+
+
+;
+
+
+
+
+*/
+/* universal selectior*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+
+
+}
+
+body {
+	background-color: skyblue;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+nav {
+	background-color: white;
+}
+
+
+/*change the element style when hovered*/
+a:hover {
+	background-color: #b4d6de;
+}
+/*display property*/
+div {
+	display: inline-block;
+	float: right;
+}
+
+h1{
+	color: black !important;
+	text-align: center;
+	font-size: 2rem;
+	/*rem is a measurement which means num times the default size of the root element's font (16px) any declaration with !important will be the highest priority. This is very useful if u want to override a css style. However, if an implementation of the keyword is found on internal or inlin css we will stuck follow the level of specificity*/
+}
+section {
+	height: 100vh; 
+	/*vh means viewport height*/
+	text-align: center;
+	/*allows us to align our text horizontally*/
+}
+h2{
+	font-size: 1.5rem;
+}
+/*id-selector it is given more priority than the other selector*/
+#ceu-motto{
+	letter-spacing: 5px;
+}
+/*clas selector for elements of the same classes*/
+.offering-item{
+	text-transform: uppercase;
+}
+
+ol{
+	list-style-type: none;
+}
+
+/*attribute selector allows us to select a particular elements with the same attributes tagname*
+border-width: allows us to determine the thickness of the element's bprder
+border-style allows us to the style of the border
+border-color allows us to determin an element's color*/
+
+input[required] {
+	border-width: 2px;
+	border-style: solid;
+	border-color: navy;
+	width: 90%;
+}
+  
+/*Adjacent sibling selector allows to select a particular element that immediately follows a sibling element*/
+
+#ceu-motto + img{
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+}
+
+#learning-list li{
+	color: #075966;
+}
+
+
+a{
+	text-decoration:none;
+}
+
+form {
+	text-align: center;
+	background-color: white;
+	border: 2px solid black;
+	height: 185px;
+	width: 25vw;
+	/*viewport width*/
+	position: relative;
+	left: 37.25%;
+}
+
+section > form > label{
+	color: rgb(0,0,128);
+}
+
+button{
+
+
+	background-color: #cf0053;
+	color:white;
+	border:0;
+	border-radius: 15px;	
+}
